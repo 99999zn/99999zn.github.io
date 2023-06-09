@@ -2,83 +2,185 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 600px;
+            width: 500px;
+            background-color: azure;
+        }
+
+        .box2{
+            height: 500px;
+            width: 400px;
+            background-color: azure;
+        }
+
+        #nav {
+        color: rgba(188, 188, 188, 0.409);
+        position: fixed top;
+        color: rgba(240, 240, 240, 0.212);
+        cursor: pointer;
+        border-radius: 5px;
+        width: 50px;
+        height: 20px;
+        }
+
+        #nav:hover {
+        background-color: #e8e8e8be;
+        }
+        
+        /* body{
+            background-image: url(SKY_20230315_112628_.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+          } */
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
+    
+    <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
+    <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
 
 
-  <div class=" container-fluid p-0">
-   
-        <div id="carouselExampleControls" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
 
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-
-          </div>
-          <a href="index2.html">
-          <div class="carousel-inner">
-            <div data-bs-interval="1000" class="carousel-item   active ">
-              <img src="img/01.jpg" class="d-block vh-100 vw-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
-                <h5 class="">1 slide label</h5>
-                <p class=" text-secondary">Some representative placeholder content for the first slide.</p>
-              </div>
-
-
-            </div>
-            <div data-bs-interval="1000" class="carousel-item ">
-              <img src="img/02.jpg" class="d-block vh-100 vw-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
-                <h5>2 slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+    <!-- 以下是導覽列 -->
+    
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-gradient ">
+           
+            <div class="container-fluid mt-2 ">
+            
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="navbar-brand" href="#"><p class=" h5 text-light d-flex justify-content-evenly me-5"><b><i>首頁</i></b></p></a>
+                  <a class="nav-link" href="https://bootstrap5.hexschool.com/docs/5.1/components/navbar/"><p class="text-light h6 text-center" id="nav"><i>◆   遇境</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   晨島</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   雲野</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   雨林</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   霞谷</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   幕土</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   禁閣</i></p></a>
+                  <a class="nav-link" href="#"><p class="text-light h6 ms-3 text-center" id="nav"><i>◆   其他</i></p></a>
+                  
+                </div>
               </div>
             </div>
-            <div data-bs-interval="1000" class="carousel-item ">
-              <img src="img/03.jpg" class="d-block vh-100 vw-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
-                <h5>3 slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div data-bs-interval="1000" class="carousel-item ">
-              <img src="img/04.jpg" class="d-block vh-100 vw-100" alt="...">
-              <div class="carousel-caption d-none d-sm-block">
-                <h5>4 slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          </a>
+          </nav>
     </div>
+<!-- 以上是導覽列 -->
+      
+    <!-- <div class="container box bg-light bg-opacity-10">
+        <div class="box2 bg-light bg-opacity-75 position-absolute top-50 start-50 translate-middle ">
+          
+        </div>
+    </div> -->
+    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-      </script>
+<div class=" container-fluid p-0 ">
+   
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="首頁.jpg" class="d-block vh-100 vw-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="SKY_20220124_201846_.jpg" class="d-block vh-100 vw-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="SKY_20200921_232459_.jpg" class="d-block vh-100 vw-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="SKY_20221219_203734_.jpg" class="d-block vh-100 vw-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="SKY_20220204_233253_.jpg" class="d-block vh-100 vw-100" alt="...">
+          </div>
+        </div>
+      </div>
+      
+</div>
+
+<div class="overlay">
+  <div class="container rounded-top ">
+    <img src="mee.jpg" alt="" class="rounded-circle img-fluid position-absolute top-0 start-50 translate-middle-x mt-5" style="height: 200px; width: 200px;">
+    
+    <h3 class="position-absolute top-50 start-50 translate-middle"> <i>大帥哥</i></h3>
+    
+    
+  
+  </div>
+
+  <div class=" container overflow-auto rounded-bottom" style="height: 250px; ">
+    <p><i>我的sky回憶錄</i></p>
+    <p><i>-------------------</i></p>
+    <p><i>光遇主要的地圖分為六張</i></p>
+    <p><i>地圖中又包含許多小地點</i></p>
+    <p><i>再加上其他特別的空間</i></p>
+    <p><i>-------------------</i></p>
+    <p><i>玩光遇也是快兩年了</i></p>
+    <p><i>想說可以來做個網站</i></p>
+    <p><i>記錄一下我的百萬回憶</i></p>
+    <p><i>在光遇裡走過的風景</i></p>
+    <p><i>還有自戀的各種照片</i></p>
+    <p><i>跟智障朋友玩耍的時光</i></p>
+    <p><i>還可以順便教個作業</i></p>
+    <p><i>做自己喜歡的東西</i></p>
+    <p><i>痛苦值直接減少70%了呢</i></p>
+    </div>
+    
+</div>
+    
+
+
+
+
+<style>
+  .carousel-container {
+    position: relative ;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0px;
+    margin: 0 ;
+    z-index: 1; /* 使容器在輪播上方 */
+  }
+  
+  .overlay .container {
+    background-color: rgba(255, 255, 255, 0.8); /* 可以加上半透明背景以增加對比度 */
+    padding: 100px;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    top: 10px;
+  
+  }
+
+
+
+
+</style>
+
+
+
+  </style>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
